@@ -1,0 +1,234 @@
+{
+    "id": 1,
+    "name": "Angular questions",
+    "questions": [
+        {
+            "id": 1010,
+            "name": "In Angular 2.0, the template compilation process is . . .",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 55,
+                    "questionId": 1010,
+                    "name": "Synchronous",
+                    "isAnswer": false,
+                    "score": 1
+
+                },
+                {
+                    "id": 56,
+                    "questionId": 1010,
+                    "name": "Asynchronous",
+                    "isAnswer": true,
+                    "score": 4
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1011,
+            "name": "Angular 2 has a . . . . service that allows us to dynamically load a component in a certain position on the page.",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 57,
+                    "questionId": 1010,
+                    "name": "DynamicControlLoader",
+                    "isAnswer": false,
+                    "score": 3
+
+                },
+                {
+                    "id": 58,
+                    "questionId": 1010,
+                    "name": "DynamicControllerLoader",
+                    "isAnswer": false,
+                    "score": 1
+                },
+                {
+                    "id":59,
+                    "questionId": 1010,
+                    "name": "DynaCompLoader",
+                    "isAnswer": false,
+                    "score": 2
+                },
+                {
+                    "id": 60,
+                    "questionId": 1010,
+                    "name": "DynamicComponentLoader",
+                    "isAnswer": true,
+                    "score": 4
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1012,
+            "name": "Angular 1 core concept was $scope, and you will not find $scope in angular 2.0. Angular 2 is using . . . . . . . . to detect changes.",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 61,
+                    "questionId": 1010,
+                    "name": "zone.js",
+                    "isAnswer": true,
+                    "score" : 4
+                },
+                {
+                    "id": 62,
+                    "questionId": 1010,
+                    "name": "zone$.js",
+                    "isAnswer": false,
+                    "score" : 3
+                },
+                {
+                    "id": 63,
+                    "questionId": 1010,
+                    "name": "Scope.js",
+                    "isAnswer": false,
+                    "score": 2
+                },
+                {
+                    "id": 64,
+                    "questionId": 1010,
+                    "name": "zones.js",
+                    "isAnswer": false,
+                    "score": 1
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1013,
+            "name": "What does MVC stand for?",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 65,
+                    "questionId": 1010,
+                    "name": "Model View Controller",
+                    "isAnswer": true,
+                    "score": 4
+                  },
+                {
+                    "id": 66,
+                    "questionId": 1010,
+                    "name": "Maximum Virtual Control",
+                    "isAnswer": false,
+                    "score": 3
+                },
+                {
+                    "id": 67,
+                    "questionId": 1010,
+                    "name": "Microsoft Visual Core",
+                    "isAnswer": false,
+                    "score": 2
+                },
+                {
+                    "id": 68,
+                    "questionId": 1010,
+                    "name": "None of the above",
+                    "isAnswer": false,
+                    "score": 1
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1014,
+            "name": "Angular 2 uses . . . . . . . . syntax for built-in directives",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 69,
+                    "questionId": 1010,
+                    "name": "Pascal case",
+                    "isAnswer": false,
+                    "score": 3
+                },
+                {
+                    "id": 70,
+                    "questionId": 1010,
+                    "name": "Snake case",
+                    "isAnswer": false,
+                    "score": 1
+                },
+                {
+                    "id": 71,
+                    "questionId": 1010,
+                    "name": "Underscore case",
+                    "isAnswer": false,
+                    "score": 2
+                },
+                {
+                    "id": 72,
+                    "questionId": 1010,
+                    "name": "Camel case",
+                    "isAnswer": true,
+                    "score": 4
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        },
+        {
+            "id": 1015,
+            "name": "The . . . . . . . . . . directive substitutes the normal href property and makes it easier to work with route links in Angular 2.",
+            "questionTypeId": 1,
+            "options": [
+                {
+                    "id": 73,
+                    "questionId": 1010,
+                    "name": "RouterRend",
+                    "isAnswer": false,
+                    "score": 1
+                },
+                {
+                    "id": 74,
+                    "questionId": 1010,
+                    "name": "RouterLayer",
+                    "isAnswer": false,
+                    "score": 3
+                },
+                {
+                    "id": 75,
+                    "questionId": 1010,
+                    "name": "RouterLike",
+                    "isAnswer": false,
+                    "score": 2
+                },
+                {
+                    "id": 76,
+                    "questionId": 1010,
+                    "name": "RouterLink",
+                    "isAnswer": true,
+                    "score": 4
+                }
+            ],
+            "questionType": {
+                "id": 1,
+                "name": "Multiple Choice",
+                "isActive": true
+            }
+        }
+    ]
+}
