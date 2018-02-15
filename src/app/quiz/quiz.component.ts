@@ -10,6 +10,8 @@ import {Router} from '@angular/router';
   providers: [QuizService]
 })
 export class QuizComponent implements OnInit {
+  //Initialize all the variables going to be used throughout the component.
+
   quiz: Quiz = new Quiz(null);
   step = 'quiz';
   quizName: string;
@@ -33,6 +35,7 @@ export class QuizComponent implements OnInit {
     this.startQuiz();
   }
 
+  // method when called at the end of the quiz, will again start the quiz.
   restartQuiz() {
     this.router.navigate(['/assessment']);
     this.startQuiz();
@@ -44,6 +47,8 @@ export class QuizComponent implements OnInit {
   }
 
   startQuiz() {
+
+    // get the list of questions by calling get method from quizService service component.
     return this.quizService.get().subscribe((results: any) => {
       this.quiz = new Quiz(results);
       this.pager.count = this.quiz.questions.length;
@@ -51,11 +56,15 @@ export class QuizComponent implements OnInit {
       });
   }
 
-  get selectedQuestions() {
+
+  // get all the questions received from the observable service call from startQuiz() method
+  get getAllQuestions() {
     return (this.quiz.questions) ?
       this.quiz.questions.slice(this.pager.index, this.pager.index + this.pager.size) : [];
   }
 
+  // get the info of the question and option selected from the view and store the information inside an array to get list
+  // of all the selected options and other meta data info.
   onSelect(question: Question, option: Option) {
     if (question.questionTypeId === 1) {
 
@@ -64,6 +73,7 @@ export class QuizComponent implements OnInit {
         {x.selected = false;}
       });
 
+      // calculate the score value from the options selected
       for (let i = 0; i < this.quiz.questions.length; i++) {
         for (let j = 0; j < this.quiz.questions[i].options.length; j++) {
           if (this.quiz.questions[i].options[j].id === this.optionValue.id ) {
@@ -84,6 +94,7 @@ export class QuizComponent implements OnInit {
     }
   }
 
+  // get the total calculated score and show it on the view.
   get score()
      {
       let score = 0;

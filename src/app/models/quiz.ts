@@ -1,6 +1,8 @@
 import { QuizConfig } from './quiz-config';
 import { Question } from './question';
 
+
+// Main quiz component model
 export class Quiz {
     id: number;
     name: string;

@@ -1,3 +1,4 @@
+// model for configuring the quiz variables and their associated super constructor if any.
 export class QuizConfig {
     allowBack: boolean;
     allowReview: boolean;
