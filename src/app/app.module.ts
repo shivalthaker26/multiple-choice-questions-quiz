@@ -1,6 +1,6 @@
 
 
-//Import all the necessary dependencies needed to instantiate the application.
+// Import all the necessary dependencies needed to instantiate the application.
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';

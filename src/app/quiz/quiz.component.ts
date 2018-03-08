@@ -10,13 +10,13 @@ import {Router} from '@angular/router';
   providers: [QuizService]
 })
 export class QuizComponent implements OnInit {
-  //Initialize all the variables going to be used throughout the component.
+  // Initialize all the variables going to be used throughout the component.
 
   quiz: Quiz = new Quiz(null);
   step = 'quiz';
   quizName: string;
   optionValue: any;
-  scoreValue = []
+  scoreValue = [];
   config: QuizConfig = {
     'allowBack': true,
     'allowReview': true,
@@ -31,21 +31,28 @@ export class QuizComponent implements OnInit {
 
   constructor(private quizService: QuizService, private router: Router) { }
 
+
+  // instantiate the component with necessary pre-requisites.
   ngOnInit() {
     this.startQuiz();
+
   }
 
   // method when called at the end of the quiz, will again start the quiz.
   restartQuiz() {
     this.router.navigate(['/assessment']);
-    this.startQuiz();
+    this.scoreValue = [];
     this.pager = {
       index: 0,
       size: 1,
       count: 1
     };
+
+    this.startQuiz();
   }
 
+
+  // this function call the list of questions.
   startQuiz() {
 
     // get the list of questions by calling get method from quizService service component.
@@ -69,24 +76,31 @@ export class QuizComponent implements OnInit {
     if (question.questionTypeId === 1) {
 
       this.optionValue = option;
-      question.options.forEach((x) => { if (x.id !== option.id)
-        {x.selected = false;}
+      question.options.forEach((x) => {
+        if (x.id !== option.id) {
+        x.selected = false;
+        }
       });
 
       // calculate the score value from the options selected
       for (let i = 0; i < this.quiz.questions.length; i++) {
         for (let j = 0; j < this.quiz.questions[i].options.length; j++) {
           if (this.quiz.questions[i].options[j].id === this.optionValue.id ) {
+            // store the optionId and each answered score value into an array
             this.scoreValue.push({'optionId' : this.optionValue.id, 'score' : this.quiz.questions[i].options[j].score});
+
           }
         }
       }
     }
+
+    // if autoMove is set to true, on selecting the option, it will auto increment to next question.
     if (this.config.autoMove) {
       this.goTo(this.pager.index + 1);
     }
   }
 
+  // function to step from one question to another
   goTo(index: number) {
     if (index >= 0 && index < this.pager.count) {
       this.pager.index = index;
@@ -104,7 +118,25 @@ export class QuizComponent implements OnInit {
       return score;
   }
 
+  // returns the boolean if the selected question is answered or not
+  isAnswered(question: Question) {
+    return question.options.find(x => x.selected) ? 'Answered' : 'Not Answered';
+  }
+
+
+  // display at the end of quiz whether the selected option was correct or incorrect.
+  isCorrect(question: Question) {
+    return question.options.every(x => x.selected === x.isAnswer) ? 'correct' : 'wrong';
+  }
+
   onSubmit() {
+    const answers = [];
+    this.quiz.questions.forEach(x => {
+
+      answers.push({ 'quizId': this.quiz.id, 'questionId': x.id, 'answered': x.answered});
+    } );
+
+    // display the last step i.e result
     this.step = 'result';
   }
 }

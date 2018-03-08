@@ -2,33 +2,7 @@
     "id": 1,
     "name": "Angular questions",
     "questions": [
-        {
-            "id": 1010,
-            "name": "In Angular 2.0, the template compilation process is . . .",
-            "questionTypeId": 1,
-            "options": [
-                {
-                    "id": 55,
-                    "questionId": 1010,
-                    "name": "Synchronous",
-                    "isAnswer": false,
-                    "score": 1
 
-                },
-                {
-                    "id": 56,
-                    "questionId": 1010,
-                    "name": "Asynchronous",
-                    "isAnswer": true,
-                    "score": 4
-                }
-            ],
-            "questionType": {
-                "id": 1,
-                "name": "Multiple Choice",
-                "isActive": true
-            }
-        },
         {
             "id": 1011,
             "name": "Angular 2 has a . . . . service that allows us to dynamically load a component in a certain position on the page.",
@@ -39,7 +13,7 @@
                     "questionId": 1010,
                     "name": "DynamicControlLoader",
                     "isAnswer": false,
-                    "score": 3
+                    "score": -1
 
                 },
                 {
@@ -47,14 +21,14 @@
                     "questionId": 1010,
                     "name": "DynamicControllerLoader",
                     "isAnswer": false,
-                    "score": 1
+                    "score": -1
                 },
                 {
                     "id":59,
                     "questionId": 1010,
                     "name": "DynaCompLoader",
                     "isAnswer": false,
-                    "score": 2
+                    "score": -1
                 },
                 {
                     "id": 60,
@@ -87,21 +61,21 @@
                     "questionId": 1010,
                     "name": "zone$.js",
                     "isAnswer": false,
-                    "score" : 3
+                    "score" : -1
                 },
                 {
                     "id": 63,
                     "questionId": 1010,
                     "name": "Scope.js",
                     "isAnswer": false,
-                    "score": 2
+                    "score": -1
                 },
                 {
                     "id": 64,
                     "questionId": 1010,
                     "name": "zones.js",
                     "isAnswer": false,
-                    "score": 1
+                    "score": -1
                 }
             ],
             "questionType": {
@@ -127,21 +101,21 @@
                     "questionId": 1010,
                     "name": "Maximum Virtual Control",
                     "isAnswer": false,
-                    "score": 3
+                    "score": -1
                 },
                 {
                     "id": 67,
                     "questionId": 1010,
                     "name": "Microsoft Visual Core",
                     "isAnswer": false,
-                    "score": 2
+                    "score": -1
                 },
                 {
                     "id": 68,
                     "questionId": 1010,
                     "name": "None of the above",
                     "isAnswer": false,
-                    "score": 1
+                    "score": -1
                 }
             ],
             "questionType": {
@@ -160,21 +134,21 @@
                     "questionId": 1010,
                     "name": "Pascal case",
                     "isAnswer": false,
-                    "score": 3
+                    "score": -1
                 },
                 {
                     "id": 70,
                     "questionId": 1010,
                     "name": "Snake case",
                     "isAnswer": false,
-                    "score": 1
+                    "score": -1
                 },
                 {
                     "id": 71,
                     "questionId": 1010,
                     "name": "Underscore case",
                     "isAnswer": false,
-                    "score": 2
+                    "score": -1
                 },
                 {
                     "id": 72,
@@ -200,21 +174,21 @@
                     "questionId": 1010,
                     "name": "RouterRend",
                     "isAnswer": false,
-                    "score": 1
+                    "score": -1
                 },
                 {
                     "id": 74,
                     "questionId": 1010,
                     "name": "RouterLayer",
                     "isAnswer": false,
-                    "score": 3
+                    "score": -1
                 },
                 {
                     "id": 75,
                     "questionId": 1010,
                     "name": "RouterLike",
                     "isAnswer": false,
-                    "score": 2
+                    "score": -1
                 },
                 {
                     "id": 76,
